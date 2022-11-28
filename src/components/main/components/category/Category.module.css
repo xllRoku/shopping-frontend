@@ -1,0 +1,17 @@
+.category {
+  margin-top: 2rem;
+}
+
+.categoryHd {
+  margin-bottom: 2rem;
+}
+
+.containerItems {
+  --auto-grid-min-size: 20rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 3.125rem;
+}
