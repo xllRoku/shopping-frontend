@@ -1,0 +1,113 @@
+.center {
+  height: calc(100vh + 5rem);
+  display: grid;
+  place-items: center;
+}
+
+.signupContainer {
+  width: 40rem;
+  min-height: 32rem;
+  padding: 2.5rem 0;
+  background: var(--white);
+  border-radius: 1.2rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--light-blue-shades);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupForm {
+  padding: 0 2.5rem;
+}
+
+.signupForm > .formTitle {
+  text-align: center;
+  font-size: var(--h2-titulos);
+  font-weight: 700;
+}
+
+.formTitle > span {
+  color: var(--light-orange);
+}
+
+.signupDescription {
+  font-size: var(--p-parrafos);
+  text-align: center;
+}
+
+.formInput {
+  width: 100%;
+  font-size: var(--h5-contador);
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+.formInput:hover {
+  color: var(--light-orange);
+}
+
+.inputBox {
+  width: calc(100% - 0.4rem);
+  padding: 1rem 0;
+  margin: 0.5rem 0;
+  border-radius: 1.2rem;
+  border: 0.2rem solid var(--light-blue-shades);
+  text-indent: 1rem;
+  font: inherit;
+}
+
+.inputBox:hover,
+.inputBox:focus {
+  border-color: var(--light-orange);
+  outline: none;
+}
+
+.message {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: var(--light-red);
+  font-size: var(--h5-contador);
+  display: none;
+}
+
+.primaryBtn {
+  background-color: var(--light-orange);
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1rem 0 0;
+  border-radius: 1rem;
+  font: inherit;
+  border-style: none;
+  font-size: var(--h3-productos);
+  color: var(--white);
+  font-weight: 700%;
+}
+
+.primaryBtn:hover {
+  background-color: var(--light-blue);
+  cursor: pointer;
+}
+
+.primaryBtn:active {
+  transform: translateY(0.2rem);
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--light-blue-shades);
+}
+
+.login {
+  padding-top: 1rem;
+  font-size: var(--h5-contador);
+}
+
+.login > a {
+  text-decoration: none;
+  color: var(--light-orange);
+}
+
+@media (min-width: 800px) {
+  .signupContainer {
+    margin: 5rem 0;
+    transform: scale(1.2);
+  }
+}
