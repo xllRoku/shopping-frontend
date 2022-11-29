@@ -33,7 +33,7 @@ const Login = () => {
 					className={styles.loginForm}
 					id='login-form'
 					onSubmit={handleSubmit(formValues =>
-						onSubmit(formValues, setLogin)
+						onSubmit(formValues, setLogin, routerPush)
 					)}
 				>
 					<h1 className={styles.formTitle}>
@@ -63,7 +63,7 @@ const Login = () => {
 	);
 };
 
-const onSubmit = async (formValues, setLogin) => {
+const onSubmit = async (formValues, setLogin, routerPush) => {
 	const { email, password } = formValues;
 
 	console.log(email, password);
@@ -73,12 +73,11 @@ const onSubmit = async (formValues, setLogin) => {
 			email,
 			password
 		})
-		.then(response =>
-			setLogin(login => ({
-				...login,
-				token: response.data
-			}))
-		)
+		.then(response => {
+			if (response.data.token) {
+				routerPush('/home');
+			}
+		})
 		.catch(error =>
 			setLogin(login => ({
 				...login,

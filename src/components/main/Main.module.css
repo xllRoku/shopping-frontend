@@ -1,7 +1,6 @@
 .pdSides {
-  width: 100%;
-  height: 100vh;
-  padding-top: 2rem;
-  padding-inline: 2rem;
-  overflow-y: scroll;
+	width: 100%;
+	height: 100vh;
+	padding-top: 3rem;
+	padding-inline: 6rem;
 }

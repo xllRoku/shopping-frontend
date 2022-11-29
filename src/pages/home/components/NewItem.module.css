@@ -20,17 +20,19 @@
 }
 
 .addItemContainer {
-	width: 35rem;
-	height: 100vh;
+	/* width: 35rem; */
+	/* height: 100vh; */
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
 	margin-left: 6rem;
 }
 
 .loginForm {
+	width: 35rem;
 	padding: 0 1.5rem;
+	padding-top: 3rem;
 }
 
 .loginForm > .formTitle {
@@ -71,9 +73,9 @@
 	outline: none;
 }
 
-.form-input > textarea {
+.formInput > textarea {
 	resize: none;
-	width: calc(100% - 1.4rem);
+	/* width: calc(100% - 1.4rem); */
 	padding-left: 1rem;
 	text-indent: 0;
 }
@@ -89,12 +91,14 @@
 }
 
 .buttons {
+	margin-top: 1.5rem;
 	display: flex;
 	justify-content: center;
-	margin-top: 1.5rem;
+	align-items: flex-end;
+	height: 25rem;
 }
 
-.section-btn {
+.sectionBtn {
 	width: 8.7rem;
 	padding: 2rem 0;
 	margin: 0 2rem;
@@ -106,34 +110,34 @@
 	cursor: pointer;
 }
 
-.section-btn:active {
+.sectionBtn:active {
 	transform: translateY(0.2rem);
 	box-shadow: 0.2rem 0.2rem 0.5rem var(--light-blue-shades);
 }
 
-.cancel-btn {
+.cancelBtn {
 	background: transparent;
 }
 
-.cancel-btn:hover {
+.cancelBtn:hover {
 	color: var(--light-orange);
 }
 
-.save-btn {
+.saveBtn {
 	background: var(--light-orange);
 	color: var(--white);
 }
 
-.save-btn:hover {
+.saveBtn:hover {
 	background: var(--light-blue);
 }
 
 @media (min-width: 800px) {
-	.add-item-container {
+	.addItemContainer {
 		margin: 0;
 	}
 
-	.login-form {
+	/* .loginForm {
 		padding: 0 3.5rem 0 0.5rem;
-	}
+	} */
 }
