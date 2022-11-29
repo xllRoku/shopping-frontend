@@ -1,0 +1,139 @@
+:root {
+	/* Colors */
+	--light-orange: #f9a109;
+	--dark-shades: #97969c;
+	--light-blue-shades: #cccccd;
+	--light-blue-bg: #fafafe;
+	--light-blue: #56ccf2;
+	--dark-bg: #80485b;
+	--light-red: #eb5757;
+	--white: #ffffff;
+	--black: #000000;
+
+	/* Font Size */
+	--h1-titulos: 2.6rem;
+	--h2-titulos: 2.4rem;
+	--h3-productos: 1.8rem;
+	--p-parrafos: 1.4rem;
+	--h4-secciones: 1.4rem;
+	--h5-contador: 1.2rem;
+}
+
+.addItemContainer {
+	width: 35rem;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 6rem;
+}
+
+.loginForm {
+	padding: 0 1.5rem;
+}
+
+.loginForm > .formTitle {
+	text-align: start;
+	font-size: var(--h2-titulos);
+	font-weight: 700;
+}
+
+.formInput {
+	width: 100%;
+	font-size: var(--h5-contador);
+	display: inline-block;
+	margin: 0.5rem 0;
+}
+
+.formInput:hover {
+	color: var(--light-orange);
+}
+
+.inputBox {
+	width: calc(100% - 0.4rem);
+	padding: 2rem 0;
+	margin: 0.5rem 0;
+	background: transparent;
+	border-radius: 1.2rem;
+	border: 0.2rem solid var(--light-blue-shades);
+	text-indent: 1rem;
+	font: inherit;
+}
+
+.inputBox::placeholder {
+	color: var(--dark-shades);
+}
+
+.inputBox:hover,
+.inputBox:focus {
+	border-color: var(--light-orange);
+	outline: none;
+}
+
+.form-input > textarea {
+	resize: none;
+	width: calc(100% - 1.4rem);
+	padding-left: 1rem;
+	text-indent: 0;
+}
+
+.select {
+	appearance: none;
+	cursor: pointer;
+	color: var(--dark-shades);
+}
+
+.option {
+	color: var(--black);
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	margin-top: 1.5rem;
+}
+
+.section-btn {
+	width: 8.7rem;
+	padding: 2rem 0;
+	margin: 0 2rem;
+	border-radius: 1rem;
+	font: inherit;
+	font-weight: 700;
+	border-style: none;
+	font-size: var(--h4-secciones);
+	cursor: pointer;
+}
+
+.section-btn:active {
+	transform: translateY(0.2rem);
+	box-shadow: 0.2rem 0.2rem 0.5rem var(--light-blue-shades);
+}
+
+.cancel-btn {
+	background: transparent;
+}
+
+.cancel-btn:hover {
+	color: var(--light-orange);
+}
+
+.save-btn {
+	background: var(--light-orange);
+	color: var(--white);
+}
+
+.save-btn:hover {
+	background: var(--light-blue);
+}
+
+@media (min-width: 800px) {
+	.add-item-container {
+		margin: 0;
+	}
+
+	.login-form {
+		padding: 0 3.5rem 0 0.5rem;
+	}
+}
